@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For Giane ❤️</title>
+  <style>
+    body {
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      text-align: center;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      max-width: 380px;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 15px;
+      margin-bottom: 15px;
+    }
+
+    h1 {
+      color: #ff4d6d;
+    }
+
+    p {
+      font-size: 17px;
+      color: #444;
+    }
+
+    button {
+      padding: 12px 22px;
+      font-size: 16px;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      margin: 10px;
+    }
+
+    .yes {
+      background: #ff4d6d;
+      color: white;
+    }
+
+    .no {
+      background: #ccc;
+      position: relative;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <img src="giane-rhay.jpg" alt="Us ❤️">
+
+    <h1>Hi Giane 💖</h1>
+
+    <p>
+      Alam mo ba? Kahit simpleng moment lang,<br>
+      special na agad kapag ikaw yung kasama 😌
+    </p>
+
+    <p>
+      Kaya ginamit ko na lahat ng IT skills ko 🤓<br>
+      para tanungin ka nito…
+    </p>
+
+    <p>
+      <b>Giane Baroso, will you be my Valentine?</b> 🌹
+    </p>
+
+    <button class="yes" onclick="yesClicked()">Yes 💕</button>
+    <button class="no" onmouseover="moveButton(this)">No 😆</button>
+  </div>
+
+  <script>
+    function yesClicked() {
+      document.body.innerHTML = `
+        <div style="text-align:center; padding:40px;">
+          <h1 style="color:#ff4d6d;">SHE SAID YES!!! 😍🎉</h1>
+          <p style="font-size:20px;">
+            Thank you, Giane 💖<br><br>
+            Promise ko, araw-araw kitang<br>
+            papangitiin (at kukulitin 😅)
+          </p>
+          <p style="font-size:18px;">
+            Love,<br>
+            <b>Rhay Ricafrente 💘</b>
+          </p>
+        </div>
+      `;
+    }
+
+    function moveButton(btn) {
+      btn.style.position = "absolute";
+      btn.style.left = Math.random() * 80 + "vw";
+      btn.style.top = Math.random() * 80 + "vh";
+    }
+  </script>
+
+</body>
+</html>
